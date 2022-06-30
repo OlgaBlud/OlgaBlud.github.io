@@ -9,7 +9,7 @@ main {
   grid-auto-columns: auto;
   justify-content: start;
   gap: 20px;
-  padding: 30px;
+  padding: 31px;
 }
 body {
   background: #DCEDC8; 
