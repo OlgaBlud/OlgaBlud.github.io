@@ -1,0 +1,45 @@
+@import
+  url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.round {
+  border-radius: 50%;
+}
+main {
+  display: grid;
+  grid-auto-columns: auto;
+  justify-content: start;
+  gap: 20px;
+  padding: 30px;
+}
+body {
+  background: #DCEDC8; 
+}
+body, main {
+  font-family: Poppins;
+}
+a:active, a:link, a:visited {
+  color: #874713;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.two-columns {
+  display: grid;
+  grid-template: auto/minmax(0, 50%) minmax(0, 50%);
+  gap: 20px;
+}
+.shadow {
+  box-shadow: 0 4px 8px #1B5E20
+}
+.badge, .card {
+  background: rgb(240, 240,240);
+  padding: 4px 5px;
+  border-radius: 10px;
+  display: inline-block;
+  line-height: 13px;
+  font-size: 13px;
+  font-weight: 600;
+  color: rgb(51, 51, 51);
+  margin: 0 0 20px 0;
+}
