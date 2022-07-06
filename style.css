@@ -3,22 +3,82 @@
 
 .round {
   border-radius: 50%;
+  height: 250px;
 }
+.background{
+  background-image: url(https://kartinkin.net/uploads/posts/2022-02/thumbs/1645506301_15-kartinkin-net-p-kartinki-polya-17.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat (2, 1fr);
+  grid-template-rows: repeat (4, 1fr);
+  min-height: 800px;
+  align-items: center;
+}
+.navigation {
+  background-color: none;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  align-self: center;
+  justify-self: center;
+}
+.avatar {
+  background-color: none;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  align-self: center;
+  justify-self: center;
+}
+.name {
+  background-color: none;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  align-self: center;
+  justify-self: center;
+}
+
+.social {
+  background-color: none;
+  grid-column: 1/3;
+  grid-row: 3/4;
+  align-self: center;
+  justify-self: center;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li{
+  float: left;
+  padding: 10px;
+  font-size: 20px;
+} 
+h1, h2 {
+  color: #fff;
+}
+
 main {
   display: grid;
   grid-auto-columns: auto;
   justify-content: start;
   gap: 20px;
-  padding: 31px;
+  padding: 30p;
+  max-width: 1300px;
 }
 body {
-  background: #DCEDC8; 
+  background: ##FDEFB7;
+  padding: 0 calc(50% - 590px);
 }
 body, main {
   font-family: Poppins;
 }
 a:active, a:link, a:visited {
-  color: #874713;
+  color: #000099;
   text-decoration: none;
 }
 a:hover {
@@ -30,7 +90,7 @@ a:hover {
   gap: 20px;
 }
 .shadow {
-  box-shadow: 0 4px 8px #1B5E20
+  box-shadow: 0 4px 8px #E9A160
 }
 .badge, .card {
   background: rgb(240, 240,240);
@@ -43,3 +103,38 @@ a:hover {
   color: rgb(51, 51, 51);
   margin: 0 0 20px 0;
 }
+
+.social svg {
+  fill: white;
+  width: 100px;
+  margin-right: 10px;
+}
+button {
+  justify-content: center;
+  align-item: center;
+  min-height: 45px;
+  width: 300px;
+  margin: 0;
+  padding: 0;
+}
+.btn {
+  font-size: 20px;
+  color: white;
+  background: linear-gradient(to bottom, #000099, #ffcc66);
+  text-transform: uppercase;
+  border-radius: 40px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  transition: all .5s;
+  cursor: pointer;
+  border: none;
+  grid-column: 1/3;
+  grid-row: 4/5;
+  align-self: center;
+  justify-self: center;
+
+}
+.btn:hover {
+  background-position: right;
+}
+/* смена градиента не работает */
